@@ -1,1 +1,156 @@
-j
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audiogram – Share Your Sound</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --accent: #7c5cfc;
+      --accent2: #fc5c7d;
+      --text: #f0f0f5;
+      --muted: #888899;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2.5rem;
+      border-bottom: 1px solid #1e1e2e;
+    }
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--text); }
+    .hero {
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 span {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      padding: 0.85rem 2.25rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn:hover { opacity: 0.88; transform: translateY(-2px); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #1e1e2e;
+      border-radius: 1rem;
+      padding: 2rem 1.75rem;
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+      border-top: 1px solid #1e1e2e;
+      margin-top: 4rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; margin: 0 0.5rem; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Audiogram</div>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Turn Audio Into<br/><span>Visual Stories</span></h1>
+    <p>Audiogram lets you create stunning animated audio visuals to share your sound across social platforms — effortlessly.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <div class="icon">🎵</div>
+      <h3>Audio Visualization</h3>
+      <p>Transform any audio clip into a beautiful animated waveform or spectrum visual.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📤</div>
+      <h3>Easy Sharing</h3>
+      <p>Export and share directly to Instagram, Twitter, YouTube, and more.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Custom Styles</h3>
+      <p>Choose from multiple visual styles, colors, and layouts to match your brand.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Audiogram. All rights reserved.</p>
+    <p style="margin-top:0.5rem;">
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </footer>
+</body>
+</html>
